@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center; 
+}
+
+nav img {
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+
+.menuNavOptions {
+    display: none;
+    background-color: #E6E6E6;
+}
+
+.menuNavOptions ul {
+    display: flex;
+}
+
+.menuNavOptions a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menuNavOptions.show {
+    position: fixed;
+    display: block;
+    z-index: 999;    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.buttonCloseMenu {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 16px;
+}
+
+.navMenu {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px; 
+}
+
+.navMenu p {
+   text-decoration: none;
+   color:white; 
+}
+
+.headerHome {
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.headerSelfImage img {
+    border: 1px solid;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.headerHome h1 {
+    color: #0D99FF;
+    font-size: 25px;
+}
+
+.aboutMe p {
+    font-size: 20px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.navMenu nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px; 
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.navMenu nav.show {
+    display: block;
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 30px; 
+    margin: 30px 0;
+    color: #4B4B4B;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.skillSection {
+    background-color: #1E1E1E;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 100%;
+    border-color: #1E1E1E;
+}
+
+.skillSection img {
+    width: 40px;
+    height: 40px;
+}
+
+.skillSection p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.skillLogo {
+    margin: 0;
+    padding: 0;
+}
+
+#projetos-trabalhados {
+    background-color: #ccc;
+    padding-bottom: 30px;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+#projetos-trabalhados h2 {
+    padding-top: 20px;
+}
+
+.worksParagraph {
+    padding-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.worksParagraph strong {
+    color: #4B4B4B;
+}
+
+.buttonProject {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #1E1E1E;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+}
+
+/*------------------------------------------------------------ TELA TABLET ------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    .menuNavOptions.show {
+        gap: 60px;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .aboutMe p {
+      max-width: 600px;
+      font-size: 25px;
+    }
+
+    .headerHome h1 {
+        color: #0D99FF;
+        font-size: 30px;
+    }
+
+    .headerSelfImage img {
+        height: 200px;
+        width: 200px;
+        margin-top: 30px;
+    } 
+
+    .skills {
+        gap: 50px;
+        min-width: 550px;
+        margin-bottom: 50px;
+    } 
+
+    .skillSection {
+        background-color: #1E1E1E;
+        border: solid;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 140px;
+        width: 140px;
+        padding: 10px;
+        border-radius: 100%;
+        border-color: #1E1E1E;
+    }
+
+    .containerWorks {
+        display: flex;
+        gap: 25px;
+        align-items: flex-start;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 40px 0 40px;
+    }
+
+    .worksParagraph {
+        text-align: left;
+    }
+
+    .buttonProject {
+        width: 260px;
+        height: 60px;
+    }
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contatos {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 300px;
+    padding: 30px 0;
+    flex-direction: column; 
+}
+
+.contactsParagraph {
+    color: #ffffff;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactsLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.contactsLinks img {
+    width: 40px;
+    height: 40px;
+}
+
+/*------------------------------------------------------------ TELA PC ------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+    nav img {
+        display: none;
+    } 
+
+    .menuNavOptions {
+        display: flex;
+        gap: 50px;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    .menuNavOptions a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .menuNavOptions a:hover {
+       color: #0D99FF;
+    }
+
+    ul {
+        list-style-type: none;  
+    }
+    
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutMe p {
+        max-width: 600px;
+        font-size: 30px;
+    }
+
+    .headerHome h1 {
+        font-size: 40px;
+    }
+
+    .headerHome {
+        padding-bottom: 30px;
+        gap: 10%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+
+    .headerSelfImage img {
+        height: 310px;
+        width: 310px;
+        margin-top: 30px;
+    }
+
+    .skills {
+        gap: 100px;
+        max-width: 800px;
+        margin-bottom: 50px;
+    } 
+
+    .skillSection {
+        height: 170px;
+        width: 170px;
+    }
+
+    main h2 {
+        font-size: 40px; 
+        margin: 60px 0;
+    }
+
+    .skillSection img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skillSection p {
+        margin-top: 10px;
+    }
+
+    .containerWorks {
+        padding: 16px;
+        gap: 80px;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 40px 0 40px;
+    }
+
+    .worksParagraph {
+        text-align: left;
+    }
+
+    .buttonProject {
+        width: 300px;
+        height: 70px;
+        font-size: 18px;
+    }
+
+    .buttonProject:hover {
+      background-color: #4B4B4B;
+    }  
+    
+    footer {
+        height: 400px;
+    }
+
+    .contactsParagraph {
+        font-size: 18px;
+    }
+
+    .contactsLinks {
+        display: flex;
+        gap: 40px;
+    }
+
+    .contactsLinks img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+

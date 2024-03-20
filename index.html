@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Guilherme Silva Evangelista</title>
+</head>
+<body>
+    <header>
+        <nav class="navMenu">
+            <p>Guilherme</p>
+
+                <div class="buttonOpenMenu">
+                    <img src="images/burgerMenu.svg" onClick="openMenu()">
+                </div> 
+
+            <ul class="menuNavOptions">
+                <div class="buttonCloseMenu">
+                    <img src="images/close.svg" onclick="closeMenu()">    
+                </div>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                
+                </li>
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                    <li>
+                    <a href="#projetos-trabalhados">Projetos Trabalhados</a>
+                </li>
+
+                <li>
+                    <a href="#contatos">Contatos</a>
+                </li> 
+            </ul>
+        </nav>
+
+        <div class="headerHome">
+            
+            <div class="headerSelfImage">
+                <img src="images/guilherme.jpg" alt="foto Guilherme"/>
+            </div>
+
+            <div class="aboutMe">
+                <h1>Guilherme Silva Evengelista</h1>
+
+                <p>Estudante de Engenharia da Computação, aspira atuar no mercado de TI como desenvolvedor Front-end.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="habilidades" onclick="scrollToSection('habilidades')">Habilidades</h2>
+
+        <section class="skills">
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/html-logo.svg">
+                <p>HTML</p>
+                </div>
+            </div>   
+            
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/css-logo.svg">
+                <p>CSS</p>
+                </div>
+            </div>   
+
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/javascript-logo.svg">
+                <p>JavaScript</p>
+                </div>
+            </div>   
+
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/react-logo.svg">
+                <p>React</p>
+                </div>
+            </div>   
+
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/c-logo.svg">
+                <p>C</p>
+                </div>
+            </div> 
+
+            <div class="skillSection">
+                <div class="skillLogo">
+                <img src="images/python-logo.svg">
+                <p>Python</p>
+                </div>
+            </div> 
+        </section>
+
+        <section id="projetos-trabalhados" onclick="scrollToSection('projetos-trabalhados')">
+            <div class="containerWorks">
+                <div class="teste">
+                    <h2>Projetos Trabalhados</h2>
+                </div>
+
+                <div class="worksParagraph">
+                    <p>Elaboração e desenvolvimento de um <strong>website institucional</strong> para uma empresa do 
+                        ramo vestuário, utilizando as linguagens <strong>HTML / CSS / JavaScript / PHP</strong>.
+                    </p>      
+
+                    <a href="https://github.com/guilherme1s/front-end" target="_blank">
+                        <button class="buttonProject">Acessar projeto</button>
+                    </a>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <footer id="contatos" onclick="scrollToSection('contatos')">
+        <div class="contactsParagraph">
+            <p>(11)97812-1784</p>
+            <p>2000guilherme.silva@gmail.com</p>
+        </div>
+
+        <div class="contactsLinks">
+            <div>
+                <a href="https://www.linkedin.com/in/guilherme-silva-b50610268/"><img src="images/linkedin-icon.svg" alt="Linkedin imagem" target="_blank"></a>
+            </div>
+            
+            <div>
+              <a href="https://github.com/guilherme1s"><img src="images/github-icon.svg" alt="GitHub imagem" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scrpit.js"></script>
+</body>
+</html>
