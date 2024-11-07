@@ -24,7 +24,7 @@ function closeMenu() {
 }
 
 function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
+    let section = document.getElementById(sectionId);
     
     if (section) {
         window.scrollTo({
@@ -34,27 +34,27 @@ function scrollToSection(sectionId) {
     }
 }
 
-getModalHTML.onclick = function() {
+function openHtmlModal() {
     modalHTML.showModal();  
 }
 
-getModalCSS.onclick = function() {
+function openCssModal() {
     modalCSS.showModal();
 }
 
-getModalJS.onclick = function() {
+function openJsModal() {
     modalJS.showModal();
 }
 
-getModalReact.onclick = function() {
+function openReactModal() {
     modalReact.showModal();
 }
 
-getModalC.onclick = function() {
+function openCModal() {
     modalC.showModal();
 }
 
-getModalPy.onclick = function() {
+function openPyModal() {
     modalPy.showModal();
 }
 
